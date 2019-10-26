@@ -1,0 +1,15 @@
+{% load tz %}
+
+<h1> post detail vies</h1>
+
+<br />
+<h2>{{ blog.Title }}</h2>
+<br />
+
+{{ blog.Date | localtime }}
+<br />
+
+<img src="{{ blog.Image.url }}" width="50%" height="50%">
+<br />
+
+<p>{{ blog.Content | safe }}</p>
